@@ -60,7 +60,7 @@
         <h1>Cue & Genesis' Dating Experience Survey</h1>
         <p>Rate each experience on a scale of 1 to 5, where 1 is "Meh" and 5 is "Epic":</p>
         
-        <form action="/submit-survey" method="post">
+        <form onsubmit="return showMessage()">
             <!-- Cocktail Delight -->
             <div class="question">
                 <label>Cocktail Delight: Rate the delightfulness of our chosen cocktails. 🍹🎨</label>
@@ -128,5 +128,14 @@
             <input type="submit" value="Submit Survey">
         </form>
     </div>
+<script>
+    function showMessage() {
+        alert('Cállate Porfavor!');
+        return false; // This prevents the form from actually submitting
+    }
+</script>
+</body>
+</html>
+
 </body>
 </html>
